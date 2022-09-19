@@ -29,7 +29,7 @@ header {
 .zakazi:hover {
   cursor: pointer;
   padding-top: 15px;
-  transition: 1s;
+  transition: 1.3s;
   font-size: 27px;
 }
 .zakazi_a {
