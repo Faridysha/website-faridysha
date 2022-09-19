@@ -1,0 +1,24 @@
+body {
+  background-color: darksalmon;
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+.element {
+  width: 150px;
+  height: 150px;
+  transition: 1s;
+}
+.element:hover {
+  transform: scale(1.2);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
