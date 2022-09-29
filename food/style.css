@@ -1,37 +1,72 @@
 body {
   background-color: #b6c6e7;
   font-family: "Bellota", cursive;
+  overflow-x: hidden;
 }
 h1 {
   text-align: center;
-  font-size: 56px;
+  font-size: 44px;
 }
-.davai {
- 
+
+.form {
+  width: 180px;
+  text-align: center;
 }
 .all_column {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 26px;
 }
 .column_border {
   border: 1px solid #c4daf2;
   border-radius: 25px;
-  padding: 30px;
-  background-color: #c4daf2;
-  width: 250px;
-  height: 250px;
-}
 
+  background-color: #c4daf2;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pol {
+  padding: 10px;
+  border-radius: 5px;
+}
 .input {
   border: none;
   border-bottom: 1px solid black;
   background-color: #c4daf2;
 }
+.result {
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
 .woman {
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 550px;
+  position: relative;
+  top: 90px;
+}
+.hidden {
+  display: none;
 }
 .kkal {
+  text-align: center;
+}
+/* okno snizy */
+.compliment {
+  padding-left: 100px;
+  font-size: 25px;
+}
+.pitanie {
+  background-color: #c4daf2;
+  width: 2000px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.hidden2 {
   display: none;
 }
