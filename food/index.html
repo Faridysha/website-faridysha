@@ -21,28 +21,72 @@
           <p class="davai2">
             Давай узнаем сколько калорий тебе нужно есть в день!
           </p>
-          <p class="kkal hidden">Тебе необходимо в день кушать ... ккал</p>
+          <p class="kkal hidden">
+            Тебе необходимо в день кушать
+            <u><span class="zifra_kkal"></span></u> ккал
+          </p>
         </div>
       </div>
       <div class="column2 column_border">
         <form class="form">
           <p>Пол:</p>
           <select class="pol">
-            <option>мужской</option>
-            <option>женский</option>
+            <option value="man">мужской</option>
+            <option value="woman">женский</option>
           </select>
 
-          <p>Возраст: <input class="input age" /></p>
-          <p>Рост: <input class="input rost" /></p>
-          <p>Вес: <input class="input ves" /></p>
-          <button class="result">Узнать</button>
+          <p>
+            Возраст:
+            <input required class="input age" oninput="ystala()" />
+          </p>
+          <p>
+            Рост:
+            <input required class="input rost" oninput="ystala()" />
+          </p>
+          <p>Вес: <input required class="input ves" oninput="ystala()" /></p>
+          <button class="result" id="btn">Узнать</button>
         </form>
       </div>
       <div><img src="woman.png" class="woman" /></div>
     </div>
     <div>
       <p class="compliment hidden">Рацион специально для тебя!</p>
-      <div class="pitanie hidden"></div>
+      <div class="pitanie hidden2">
+        <div class="nedelya">
+          <h2 class="choose">Выбери день недели</h2>
+          <select class="week">
+            <option value="monday">Понедельник</option>
+            <option value="tuesday">Вторник</option>
+            <option value="wednesday">Среда</option>
+            <option value="thursday">Четверг</option>
+            <option value="friday">Пятница</option>
+            <option value="saturday">Выходные</option>
+          </select>
+        </div>
+        <div class="monday_food praghy">
+          <div>
+            <h3>Завтрак</h3>
+            <p>Овсяная каша с фруктами, чай</p>
+          </div>
+          <div>
+            <h3>Второй завтрак</h3>
+            <p>Гренка с сыром, салатом и помидором</p>
+          </div>
+          <div>
+            <h3>Обед</h3>
+            <p>Грибной суп</p>
+          </div>
+          <div>
+            <h3>Полдник</h3>
+            <p>Домашний йогурт</p>
+          </div>
+          <div>
+            <h3>Ужин</h3>
+            <p>Отварные овощи и постная говядина</p>
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
