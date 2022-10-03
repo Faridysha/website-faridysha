@@ -81,8 +81,11 @@ h1 {
   padding-left: 30px;
 }
 .monday_food {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 250px;
+  gap: 40px;
+  text-align: center;
 }
 .box {
   width: 150px;
@@ -90,4 +93,14 @@ h1 {
 }
 .praghy {
   display: none;
+}
+.ramka {
+  background-color: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(85, 90, 114, 0.651);
+  border-radius: 10px;
+  box-shadow: 10%;
+  padding: 5px;
+  width: 220px;
+  height: 150px;
+  font-size: 20px;
 }

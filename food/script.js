@@ -80,5 +80,12 @@ knopka.addEventListener("click", function (e) {
 });
 
 /* работа с днями неделями */
-
 let weekday = document.querySelector(".week");
+weekday.addEventListener("change", function () {
+  let monday = document.querySelector(".monday_food");
+  console.log(monday);
+  console.log(weekday.value);
+  if (weekday.value == "monday") {
+    monday.classList.remove("praghy");
+  }
+});
