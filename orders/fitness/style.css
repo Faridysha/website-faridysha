@@ -7,7 +7,7 @@ html {
   height: 100%;
 }
 body {
-  background-image: url(fon.png);
+  background-image: url(images/fon.png);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -24,7 +24,7 @@ body {
 .container {
   margin: 0 auto;
 }
-.razmer {
+.slide-size {
   min-height: 100%;
 }
 #frame {
@@ -47,7 +47,7 @@ body {
   max-width: 51.7rem;
   max-height: 47.7rem;
 }
-.naycis {
+.slide-title {
   font-size: 6.6rem;
   position: relative;
   left: 13rem;
@@ -153,7 +153,7 @@ body {
   #sector1 {
     height: 100vh;
   }
-  .razmer {
+  .slide-size {
     max-width: 27rem;
     max-height: 56rem;
     display: flex;
@@ -173,7 +173,7 @@ body {
     flex-direction: column-reverse;
     justify-content: center;
   }
-  .naycis {
+  .slide-title {
     left: 0px;
     font-size: 36px;
     text-align: center;
