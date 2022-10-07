@@ -80,7 +80,12 @@ h1 {
   padding-top: 70px;
   padding-left: 30px;
 }
-.monday_food {
+.monday_food,
+.tuesday_food,
+.wednesday_food,
+.thursday_food,
+.friday_food,
+.weekend_food {
   display: flex;
   align-items: center;
   padding-left: 250px;
@@ -91,7 +96,12 @@ h1 {
   width: 150px;
   height: 150px;
 }
-.praghy {
+.praghy_monday,
+.praghy_tuesday,
+.praghy_wednesday,
+.praghy_thursday,
+.praghy_friday,
+.praghy_weekend {
   display: none;
 }
 .ramka {
