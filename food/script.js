@@ -83,9 +83,37 @@ knopka.addEventListener("click", function (e) {
 let weekday = document.querySelector(".week");
 weekday.addEventListener("change", function () {
   let monday = document.querySelector(".monday_food");
-  console.log(monday);
-  console.log(weekday.value);
-  if (weekday.value == "monday") {
-    monday.classList.remove("praghy");
+  let tuesday = document.querySelector(".tuesday_food");
+  let wednesday = document.querySelector(".wednesday_food");
+  let thursday = document.querySelector(".thursday_food");
+  let friday = document.querySelector(".friday_food");
+  let weekend = document.querySelector(".weekend_food");
+
+  monday.classList.add("praghy_monday");
+  tuesday.classList.add("praghy_tuesday");
+  wednesday.classList.add("praghy_wednesday");
+  thursday.classList.add("praghy_thursday");
+  friday.classList.add("praghy_friday");
+  weekend.classList.add("praghy_weekend");
+
+  switch (weekday.value) {
+    case "monday":
+      monday.classList.remove("praghy_monday");
+      break;
+    case "tuesday":
+      tuesday.classList.remove("praghy_tuesday");
+      break;
+    case "wednesday":
+      wednesday.classList.remove("praghy_wednesday");
+      break;
+    case "thursday":
+      thursday.classList.remove("praghy_thursday");
+      break;
+    case "friday":
+      friday.classList.remove("praghy_friday");
+      break;
+    case "weekend":
+      weekend.classList.remove("praghy_weekend");
+      break;
   }
 });
