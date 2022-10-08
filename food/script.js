@@ -18,40 +18,23 @@ let pol = document.querySelector(".pol");
 
 let btn = document.getElementById("btn");
 btn.disabled = "disabled";
+
+let checkForm = () => {
+  if (
+      age.checkValidity() === false ||
+      rost.checkValidity() === false ||
+      ves.checkValidity() === false
+  ) {
+    btn.disabled = "disabled";
+  } else {
+    btn.disabled = false;
+  }
+}
+
 function ystala() {
-  age.addEventListener("change", function () {
-    if (
-      age.checkValidity() == false ||
-      rost.checkValidity() == false ||
-      ves.checkValidity() == false
-    ) {
-      btn.disabled = "disabled";
-    } else {
-      btn.disabled = false;
-    }
-  });
-  rost.addEventListener("change", function () {
-    if (
-      age.checkValidity() == false ||
-      rost.checkValidity() == false ||
-      ves.checkValidity() == false
-    ) {
-      btn.disabled = "disabled";
-    } else {
-      btn.disabled = false;
-    }
-  });
-  ves.addEventListener("change", function () {
-    if (
-      age.checkValidity() == false ||
-      rost.checkValidity() == false ||
-      ves.checkValidity() == false
-    ) {
-      btn.disabled = "disabled";
-    } else {
-      btn.disabled = false;
-    }
-  });
+  age.addEventListener("change", checkForm);
+  rost.addEventListener("change", checkForm);
+  ves.addEventListener("change", checkForm);
 }
 
 knopka.addEventListener("click", function (e) {
