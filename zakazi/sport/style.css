@@ -1,0 +1,76 @@
+body {
+  background-image: url(fon.svg);
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b5c6f1;
+
+  overflow-y: hidden;
+}
+.gym {
+  margin: 150px 100px 0 0;
+}
+
+.all_picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.sport_inventar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  bottom: -30px;
+}
+.people {
+  position: relative;
+  bottom: -200px;
+}
+.woman_size,
+.man_size {
+  height: 600px;
+  cursor: pointer;
+}
+.gantelya_size {
+  width: 250px;
+  margin-right: 70px;
+}
+.treadmill_size {
+  width: 400px;
+  height: 200px;
+}
+.window_area {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50px;
+}
+.window1 {
+  background-color: #bc8ace;
+  position: relative;
+  left: 100px;
+  width: 150px;
+  height: 250px;
+
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.window2 {
+  background-color: #7e9dc2;
+  position: relative;
+  left: 1550px;
+  width: 150px;
+  height: 250px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.woman_window,
+.man_window {
+  display: none;
+}
